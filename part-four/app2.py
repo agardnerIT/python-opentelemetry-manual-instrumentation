@@ -62,19 +62,16 @@ def add(first, second):
 
 @tracer.start_as_current_span("subtract")
 def subtract(first, second):
-    # set_attributes(first, second, first - second)
     set_attributes({"first": first},{ "second": second }, {"result": first - second })
     return first - second
 
 @tracer.start_as_current_span("divide")
 def divide(first, second):
-    # set_attributes(first, second, first / second)
     set_attributes({"first": first},{ "second": second }, {"result": first + second })
     return first / second
 
 @tracer.start_as_current_span("multiply")
 def multiply(first, second):
-    # set_attributes(first, second, first * second)
     set_attributes({"first": first},{ "second": second }, {"result": first * second })
     return first * second
 
