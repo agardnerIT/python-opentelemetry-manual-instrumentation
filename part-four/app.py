@@ -13,8 +13,8 @@
 # This simple program enables us to generate a multi-span trace
 #
 # Usage
-# python app.py BIRTH_DAY BIRTH_MONTH
-# eg. python app.py 27 10
+# python app.py --birth_day INT --birth_month INT
+# eg. python app.py --birth_day 27 --birth_month 10
 # Expected output: 27.10
 #
 from opentelemetry import trace
@@ -27,8 +27,8 @@ from opentelemetry.sdk.resources import Resource
 import argparse
 
 parser = argparse.ArgumentParser("simple_example")
-parser.add_argument("birth_day", help="What is your birth day? Eg. 15", type=int)
-parser.add_argument("birth_month", help="What is your birth day? Eg. 3", type=int)
+parser.add_argument("-bd", "--birth_day", help="What is your birth day? Eg. 15", type=int)
+parser.add_argument("-bm", "--birth_month", help="What is your birth day? Eg. 03", type=int)
 args = parser.parse_args()
 BIRTH_DAY = args.birth_day
 BIRTH_MONTH = args.birth_month
