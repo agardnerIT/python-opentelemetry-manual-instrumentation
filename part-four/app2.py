@@ -4,8 +4,8 @@
 # to demonstrate how context is passed to child spans
 #
 # Usage
-# python app.py BIRTH_DAY BIRTH_MONTH
-# eg. python app.py 27 10
+# python app.py --birth_day INT --birth_month INT
+# eg. python app.py --birth_day 27 --birth_month 10
 # Expected output: 27.10
 #
 from opentelemetry import trace
