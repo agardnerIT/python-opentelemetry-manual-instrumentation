@@ -27,8 +27,8 @@ provider.add_span_processor(processor)
 
 
 parser = argparse.ArgumentParser("simple_example")
-parser.add_argument("birth_day", help="What is your birth day? Eg. 15", type=int)
-parser.add_argument("birth_month", help="What is your birth day? Eg. 3", type=int)
+parser.add_argument("-bd", "--birth_day", help="What is your birth day? Eg. 15", type=int)
+parser.add_argument("-bm", "--birth_month", help="What is your birth month? Eg. 3", type=int)
 args = parser.parse_args()
 BIRTH_DAY = args.birth_day
 BIRTH_MONTH = args.birth_month
