@@ -67,7 +67,7 @@ def subtract(first, second):
 
 @tracer.start_as_current_span("divide")
 def divide(first, second):
-    set_attributes({"first": first},{ "second": second }, {"result": first + second })
+    set_attributes({"first": first},{ "second": second }, {"result": first / second })
     return first / second
 
 @tracer.start_as_current_span("multiply")
