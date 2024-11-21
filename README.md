@@ -28,6 +28,6 @@ In the second tutorial, we begin to enrich spans by setting important metadata s
 
 ## Part 4: Multi-span traces demonstrating trace ID propagation
 
-Coming soon!
+[![Watch part four on YouTube](https://img.youtube.com/vi/meETw5y6fJg/0.jpg)](https://www.youtube.com/watch?v=meETw5y6fJg)
 
-[Subscribe on YouTube](https://www.youtube.com/@agardnerit?sub_confirmation=1) to be notified when the next episode(s) are release.
+[Subscribe on YouTube](https://www.youtube.com/@agardnerit?sub_confirmation=1) to be notified when the next episode(s) are released.
